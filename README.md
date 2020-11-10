@@ -2,7 +2,7 @@
 
 A new Flutter project.
 
-Project Demo Video : https://www.youtube.com/watch?v=Vyj65qh_QiA
+Project Demo Video : comming soon
 
 ## Getting Started
 Flutter Wallet UI Challange
