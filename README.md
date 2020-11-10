@@ -1,15 +1,13 @@
-# flutter_lending_help_ui_challenge
+# flutter_wallet_ui_challenge
 
-A new P2P flutter platform.
+A new Flutter project.
+
+Project Demo Video : https://www.youtube.com/watch?v=Vyj65qh_QiA
 
 ## Getting Started
-Flutter Lending help UI Challange
+Flutter Wallet UI Challange
   
-  Company | Location   
+  Page Name | Pictures   
  --- | --- 
- TTF SOLUTION  | HANOI, VIETNAM
- 
-<img src="screens/homepage.png" height= "800"/>
-<img src="screens/overviewpage.png" height= "800"/>
- 
- 
+ [Waşşet Home Page] | <img src="screens/homepage.png" height= "800"/>
+ [Overview Page] | <img src="screens/overviewpage.png" height= "800"/>
