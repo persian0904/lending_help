@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_wallet_ui_challenge/config/theme.dart';
 import 'modules/BottomNavBar.dart';
 
 class App extends StatelessWidget {
@@ -9,6 +10,7 @@ class App extends StatelessWidget {
       theme: ThemeData(
         fontFamily: "Varela",
       ),
+      // theme: DefaultTheme.of(context),
       home: BottomNavBar(),
     );
   }

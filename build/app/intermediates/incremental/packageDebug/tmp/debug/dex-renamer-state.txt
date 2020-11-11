@@ -1,4 +1,0 @@
-#Thu Nov 05 13:51:29 ICT 2020
-base.0=/Users/NghiemTuan/Desktop/TempData/Android/Wallet-app-UI-master/build/app/intermediates/transforms/dexMerger/debug/0
-path.0=classes.dex
-renamed.0=classes.dex

@@ -10,11 +10,11 @@ List<CreditCardModel> getCreditCards() {
       "https://resources.mynewsdesk.com/image/upload/ojf8ed4taaxccncp6pcp.png",
       "06/23",
       "192"));
-  creditCards.add(CreditCardModel(
-      "3015788947523652",
-      "https://resources.mynewsdesk.com/image/upload/ojf8ed4taaxccncp6pcp.png",
-      "04/25",
-      "217"));
+  // creditCards.add(CreditCardModel(
+  //     "3015788947523652",
+  //     "https://resources.mynewsdesk.com/image/upload/ojf8ed4taaxccncp6pcp.png",
+  //     "04/25",
+  //     "217"));
   return creditCards;
 }
 

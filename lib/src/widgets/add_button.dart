@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_wallet_ui_challenge/screens/register_loan.dart';
 
 class AddButton extends StatelessWidget {
   @override
@@ -31,11 +32,11 @@ class AddButton extends StatelessWidget {
               Icons.add_circle,
               color: Colors.blue,
             ),
-            onPressed: () => print("add money"),
+            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => RegisterLoanScreen())),
             iconSize: 40.0,
           ),
           Text(
-            "Add Person",
+            "Thêm",
             style: TextStyle(
                 inherit: true,
                 fontWeight: FontWeight.bold,
@@ -47,4 +48,5 @@ class AddButton extends StatelessWidget {
       ),
     );
   }
+
 }
