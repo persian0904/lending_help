@@ -31,7 +31,7 @@ class CreditCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  "Số tài khoản",
+                  "Số tài khoản.",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 15,
@@ -53,7 +53,7 @@ class CreditCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      "Expires",
+                      "hết hạn",
                       style: TextStyle(
                         fontSize: 18,
                         color: Colors.white,

@@ -18,6 +18,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
 
   @override
   Widget build(BuildContext context) {
+    final _media = MediaQuery.of(context).size;
     return new Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -39,7 +40,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
       ),
       body: Container(
         color: Color(0xffE5E5E5),
-        child: Column(
+        child: ListView(
           children: <Widget>[
             Container(
               child: Padding(
@@ -54,7 +55,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
                     )),
               ),
             ),
-            SizedBox(height: 30.0),
+            SizedBox(height: 20.0),
             Container(
               child: Align(
                 child: Material(
@@ -63,8 +64,9 @@ class _FeedbackPageState extends State<FeedbackPage> {
                   borderRadius: BorderRadius.circular(25.0),
                   shadowColor: Color(0x802196F3),
                   child: Container(
-                      width: 350.0,
-                      height: 400.0,
+                      // width: 350.0,
+                      // height: 400.0,
+                    width: _media.width - 30,
                       child: Column(
                         children: <Widget>[
                           Padding(

@@ -1,15 +1,23 @@
 import 'package:flutter/material.dart';
+
 //-------------------------page package-----------------------------------------
 import 'package:flutter_wallet_ui_challenge/src/pages/Home/HomePage.dart';
 import 'package:flutter_wallet_ui_challenge/src/pages/Overview/OverviewPage.dart';
-import 'package:flutter_wallet_ui_challenge/src/pages/Feedback/FeedbackPage.dart';
+import 'package:flutter_wallet_ui_challenge/src/pages/LendingRequest/register_loan.dart';
+import 'package:flutter_wallet_ui_challenge/src/pages/Test/Test.dart';
+
 //---------------------------other package--------------------------------------
-class FramePage extends StatelessWidget {
-  String _pageName = 'home';
-  int pageIndex = -1;
-  FramePage(int pageIndex){
-    this.pageIndex = pageIndex;
+int pageIndex = -1;
+
+class FramePage extends StatefulWidget {
+  FramePage(int Index) {
+    pageIndex = Index;
   }
+  @override
+  _FramePageState createState() => _FramePageState();
+}
+
+class _FramePageState extends State<FramePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,10 +39,12 @@ class FramePage extends StatelessWidget {
       OverviewPage overviewPage = new OverviewPage();
       return overviewPage.bodyOverviewPage(context);
     }
-    if(pageIndex == 2){
-      FeedbackPage feedbackPage = new FeedbackPage();
-      return feedbackPage;
+    if (pageIndex == 2) {
+      RegisterLoanScreen registerLoanScreen = new RegisterLoanScreen();
+      return registerLoanScreen;
     }
-  }
 
+    TestPage test = new TestPage();
+    return test;
+  }
 }

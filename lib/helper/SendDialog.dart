@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
-import 'package:payme/helper/ConfirmDialog.dart';
+import 'ConfirmDialog.dart';
 
 import 'Consts.dart';
 TextEditingController valueController = new TextEditingController();

@@ -25,7 +25,14 @@ dependencies:
   cupertino_icons: ^0.1.2
   charts_flutter: ^0.9.0
   font_awesome_flutter: ^8.10.0
+  cupertino_radio_choice: ^1.0.0+2
+  flutter_sequence_animation: ^3.0.1
+  motion_widget: ^1.0.2
+  avatar_glow: ^1.1.0
+  flutter_facebook_login: ^3.0.0
   flutter_secure_storage: ^3.3.1+1
+  carousel_slider: ^2.3.1
+  mask_text_input_formatter: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -61,6 +68,18 @@ flutter:
     - family: Varela
       fonts:
         - asset: assets/fonts/VarelaRound-Regular.ttf
+
+    - family: WorkSansSemiBold
+      fonts:
+        - asset: assets/fonts/Work_Sans/WorkSans-SemiBold.ttf
+
+    - family: WorkSansBold
+      fonts:
+        - asset: assets/fonts/Work_Sans/WorkSans-Bold.ttf
+
+    - family: WorkSansMedium
+      fonts:
+        - asset: assets/fonts/Work_Sans/WorkSans-Medium.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

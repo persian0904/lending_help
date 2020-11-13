@@ -98,7 +98,7 @@ class HomePageState extends State<HomePage> {
                     },
                     child: ListView.builder(
                       physics: BouncingScrollPhysics(),
-                      padding: EdgeInsets.only(bottom: 10),
+                      // padding: EdgeInsets.only(bottom: 10),
                       shrinkWrap: true,
                       scrollDirection: Axis.horizontal,
                       itemCount: getCreditCards().length,
@@ -149,6 +149,17 @@ class HomePageState extends State<HomePage> {
                           ),
                           onPressed: () => print("notification"),
                         ),
+                        IconButton(
+                          icon: Icon(
+                            Icons.logout,
+                            color: Colors.white,
+                            size: 28,
+                          ),
+                          onPressed: () {
+                            print("log out");
+                            Navigator.pop(context);
+                          },
+                        ),
                       ],
                     ),
                     SizedBox(
@@ -197,7 +208,7 @@ class HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Text(
-                      "Send Money",
+                      "Danh sách người vay tiềm năng",
                       style: TextStyle(
                         fontSize: 17,
                         fontWeight: FontWeight.bold,
@@ -212,9 +223,9 @@ class HomePageState extends State<HomePage> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(left: 25),
+                margin: EdgeInsets.only(left: 5),
                 height: screenAwareSize(
-                    _media.longestSide <= 775 ? 110 : 80, context),
+                    _media.longestSide <= 775 ? 120 : 90, context),
                 child: NotificationListener<OverscrollIndicatorNotification>(
                   onNotification: (overscroll) {
                     overscroll.disallowGlow();
@@ -240,24 +251,44 @@ class HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
+
               Padding(
                 padding: const EdgeInsets.only(
-                    left: 25.0, bottom: 15, right: 10, top: 40),
+                    left: 25.0, right: 10, top: 30),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Text(
-                      "All",
+                      "Danh sách khoản đầu từ/khoảng vay",
                       style: TextStyle(
                         fontSize: 17,
                         fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+
+              Padding(
+                padding: const EdgeInsets.only(
+                    left: 25.0, bottom: 15, right: 10, top: 10),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Text(
+                      "Tất cả",
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.red,
                       ),
                     ),
                     SizedBox(
                       width: 20,
                     ),
                     Text(
-                      "Received",
+                      "Đầu tư",
                       style: TextStyle(
                           fontSize: 17,
                           fontWeight: FontWeight.bold,
@@ -267,7 +298,7 @@ class HomePageState extends State<HomePage> {
                       width: 20,
                     ),
                     Text(
-                      "Sent",
+                      "Đang vay",
                       style: TextStyle(
                           fontSize: 17,
                           fontWeight: FontWeight.bold,
